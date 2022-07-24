@@ -1,16 +1,16 @@
 import streamlit as st
 st.write("""
-# Subtraction
-Subtract Second number from First number
+## Streamlit App Implementation and Deployment using Heroku
+### App: Subtraction - Subtract Second number from First number
 """)
 #Get Input
 
-st.header('User Input Parameters')
+st.header('User Inputs:')
 
 def user_input_features():
     
-    first = st.number_input("First_Number")
-    second = st.number_input("Second_Number")
+    first = st.number_input("First Number")
+    second = st.number_input("Second Number")
     answer = first - second
 
     return answer
@@ -18,6 +18,5 @@ def user_input_features():
 answer = user_input_features()
 
 
-st.subheader('Answer (First - Second)')
-st.write(answer)
-
+st.header('Answer:')
+st.subheader(answer)
