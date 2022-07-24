@@ -18,5 +18,6 @@ def user_input_features():
 answer = user_input_features()
 
 
-st.subheader('Answer')
+st.subheader('Answer (First - Second)')
 st.write(answer)
+
